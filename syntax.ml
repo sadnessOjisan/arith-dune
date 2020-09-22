@@ -71,7 +71,7 @@ and printtm_AppTerm outer t = match t with
        pr "iszero "; printtm_ATerm false t1
   | t -> printtm_ATerm outer t
 
-and printtm_ATerm outer t = match t with
+  and printtm_ATerm outer t = match t with
     TmTrue(_) -> pr "true"
   | TmFalse(_) -> pr "false"
   | TmZero(fi) ->
